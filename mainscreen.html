@@ -2,13 +2,16 @@
 <html>
   <header><h1><div style = "text-align: center"> <u>Welcome to GreenBox!</u></div></h1></header>
   <nav>
-  <div class ="dropdown">
-    <button onclick ="myFunction()" class="dropbtn">Menu</button>
+  <div class ="navbar">
+    <div class ="dropdown">
+    <button class ="dropbtn" onclick ="myFunction()">Menu<i class ="fa fa-caret-down></i>"</button>
+    <div class="dropdown-contains" id="myDropdown">
       <a href="about.html">About</a>
       <a href="mission">Mission</a>
       <a href="whycompost.html">Why Compost</a>
       </div>
     </div>
+  </div>
   </nav>
   <script>
   function myFunction() {
