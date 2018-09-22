@@ -3,16 +3,26 @@
 
     <title>GreenBox</title>
 <body>
-<h1><div style = "text-align: center"> <u>Welcome to GreenBox</u></div></h1> 
+<h1><div style = "text-align: center"> <u>Welcome to GreenBox!</u></div></h1>
 
-<h2><div style = "text-align: center"> <u>Meet the Team!</u></div></h2>
-    <p> Insert information on the team and what we do </p>
- 
-    
 
-    
-    
-    
-    
+<div class ="dropdown">
+  <button onclick ="myFunction()"
+  class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="about.html">About</a>
+    <a href="mission">Mission</a>
+    <a href="whycompost.html"</a>
+    </div>
+  </div>
+
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+</script>
+
+
+
 </body>
 </html>
