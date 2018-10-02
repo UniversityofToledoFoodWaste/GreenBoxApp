@@ -2,84 +2,15 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <header>
 
+<!-- This link rel statement tells this html file to get all of its css
+from the file named in the href statement -->
+<link rel="stylesheet" href="mainscreen.css">
 
-    <style>
+  </head>
 
-    .header {
-        font-size: 35pt;
-    }
-
-    body{background-color: #f1f1f1;
-    }
-    .navbar {
-        overflow: hidden;
-        background-color: green;
-        font-family: Verdana;
-    }
-
-    .navbar a {
-        float: left;
-        font-size: 16px;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        width: 25%;
-    }
-
-    .dropdown {
-        float: left;
-        overflow: hidden;
-    }
-
-    .dropdown .dropbtn {
-        cursor: pointer;
-        font-size: 16px;
-        border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit;
-        margin: 0;
-        width: 100%;
-    }
-
-    .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-        background-color: black;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: black;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-
-    .dropdown-content a {
-        float: none;
-        color: white;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-    }
-
-    .dropdown-content a:hover {
-        background-color: green;
-    }
-
-    .show {
-        display: block;
-    }
-    </style>
-
-
+<!--This is the html code for the very top of the page,
+    above the navbar-->
     <div class="header"><div style = "text-align: center"><b><u>Welcome to GreenBox!</u></b></div></div>
     <div style ="text-align: right">
         <a href="MyProfile">My Profile </a> </br>
@@ -87,12 +18,8 @@
         <a href="Settings"> Settings </a> <p></p>
       </div>
 
-  </header>
 
-
-
-</head>
-
+<!-- This is the html code for the navbar -->
   <div class ="navbar">
     <div class ="dropdown">
     <button class ="dropbtn" onclick ="myFunction()">Menu<i class ="fa fa-caret-down"></i></button>
@@ -104,9 +31,10 @@
     </div>
     <a href ="rewards.html">Rewards</a>
     <a href ="locategb.html">Locate a GreenBox</a>
-    <a href ="contactus.html">Contant Us!</a>
+    <a href ="contactus.html">Contact Us!</a>
   </div>
 
+<!--This is the Javascript code for the navbar -->
   <script>
   function myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
@@ -120,18 +48,30 @@
         }
     }
   }
-
   </script>
+
+
+<!--This is the general body information -->
+<div class= "body">
 <body>
 <h1> Welcome to the Food Sustainability GreenBox Website!</h1>
 <p> Explore and read more about how you can compost while receiving rewards for your contribution to the planet and why it is important!</p>
 <img src="GreenBox.PNG" alt="Greenbox" width="371" height="295">
 <p> Where does your compost go and who is impacted?</p>
 </body>
-
-<footer> What do you think of GreenBox? Leave comments and suggestions on the 'Contact Us!' page so we can improve!</footer>
-
+</div>
 
 
+
+
+
+
+
+
+<!--This is the fixed footer that will be added to all of the pages -->
+<div class ="footer">
+  <p>What do you think of GreenBox?
+  </br>Leave comments and suggestions on the 'Contact Us!' page so we can improve!</p>
+</div>
 
 </html>
