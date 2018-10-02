@@ -2,14 +2,20 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, user-scalable= yes, width=device-width">
+        <meta name="viewport" content="initial-scale=1,
+        user-scalable= yes, width=device-width">
+
         <title>GreenBox</title>
 
-        <!--This links the Registerlogin.css file to this html file -->
+        <!-- This links the Registerlogin.css file to this html file -->
         <link rel="stylesheet" href="Registerlogin.css">
 
-<!--I couldn't find out how to externally have this css for the input boxes -->
+<!-- I couldn't find out how to externally link the css properly-->
 <style>
+
+body {background-image: linear-gradient(green, white);
+    }
+
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 18px;
@@ -18,14 +24,27 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-  </style>
-    </head>
-    
-<div class="body">
-    <body>
+
+button {
+    border: 2px solid green;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 13pt;
+}
+
+</style>
+</head>
+
+<body>
+<!--This code is the JavaScript link that will allow the form to function -->
         <script type="text/javascript" src="cordova.js"></script>
+
 <h1><div style="text-align:center"> <u>Welcome to Green Box!</u></div></h1>
 
+<!--All of this is the html code for the buttons and form -->
 <div class="form">
 <form action="logininfo.php" method="post">
 	<div class ="container">
@@ -35,7 +54,6 @@ input[type=text], input[type=password] {
   <h3>Register here!</h3>
 </div>
 </br>
-
 
 	<label for="email"><b>Email:</b></label>
 	<input type="text" placeholder="example@example.com" name="email" required>
@@ -47,15 +65,19 @@ input[type=text], input[type=password] {
 	<input type ="password" placeholder="Repeat Password" name="psw-repeat"required>
 </div>
 
+
 <p><button type="submit" class="registerbtn"><b>Register</b></button>
 	</div></p>
 </form>
 </div>
 
+
+<!--I do not know what container signing is haha but it works
+ so I am keeping it -->
 <div class="container signing">
   <p>Already have an account? <a href="loginscreen.html">Sign in</a></p>
 </div>
 
- </body>
+</body>
 
 </html>

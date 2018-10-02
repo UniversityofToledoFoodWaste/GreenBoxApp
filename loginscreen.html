@@ -9,49 +9,55 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
 
+  <!-- This links the Registerlogin.css file to this html file -->
+  <link rel="stylesheet" href="Registerlogin.css">
+
+
+<!-- I couldn't figure out how to externally link the css -->
+    <style>
+
+    body {background-image: linear-gradient(green, white);
+    }
+
+    input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    }
+
+    button {
+        border: 2px solid green;
+        background-color: green;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 13pt;
+    }
+
+    </style>
 
     <title>GreenBox</title>
+
 </head>
-<style>
 
-body {background-image: linear-gradient(green, white);
-}
-
-form {border:10px double Green;
-  padding-left: 25%;
-  padding-right: 25%;
-  background-color: #f1f1f1;
-}
-input[type=text], input[type=password] {
-width: 100%;
-padding: 12px 18px;
-margin: 8px 0;
-display: inline-block;
-border: 1px solid #ccc;
-box-sizing: border-box;
-}
-button {
-border: 2px solid green;
-background-color: green;
-color: white;
-padding: 10px 10px;
-cursor: pointer;
-width: 100%;
-font-size: 13pt;
-
-}
-</style>
 <body>
 
+<!-- This is the link to the javascript -->
     <script type="text/javascript" src="cordova.js"></script>
-  <h1><div style="text-align:center"><u>Welcome to GreenBox!</u></text-align:"center"></"div style=text-align:center"></h1>
 
+  <h1><div style="text-align:center"><u>Welcome to GreenBox!</u></div></h1>
+
+<!-- This is the html code for the form -->
+<div class="form">
   <form action="logininfo.php" method="post">
 
   <div style="text-align:center">
       <p><h2>Log In</h2></p>
     </div>
-
 
   <p> <label for="email"><b>Email:</b></label>
   	<input type="text" placeholder="example@example.com" name="email" id="email" required>
@@ -62,9 +68,8 @@ font-size: 13pt;
 
   <p><button type="submit" class="registerbtn"><b>Log In</b></button></p>
 
-
   </form>
-
+</div>
 
 </body>
 
