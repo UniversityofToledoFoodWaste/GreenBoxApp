@@ -1,11 +1,54 @@
 
-
 .header {
     font-size: 35pt;
 }
 
 .body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+
+.block {
+  display: block;
+  width: auto;
+  float: center;
+  border-style: solid;
+  border-color: green;
   background-color: #f1f1f1;
+  font-size: 20pt;
+  font-style: normal;
+  padding-left: 20pt;
+  padding-right: 20pt;
+  padding-top: 10pt;
+  padding-bottom: 10pt;
+  margin: 10, 10;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: #636b66;
+  color: white;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 15pt;
+  padding-top: 20px;
+}
+
+.push {
+  height: 100px;
 }
 
 .navbar {
@@ -70,17 +113,4 @@
 
 .show {
     display: block;
-}
-
-.footer {
-  position: fixed;
-  width: 100%;
-  background-color: #636b66;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  text-align: center;
-  font-size: 15pt;
 }

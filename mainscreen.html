@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-  
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- This link rel statement tells this html file to get all of its css
@@ -13,14 +13,12 @@ from the file named in the href statement -->
 <!--This is the html code for the very top of the page,
     above the navbar-->
     <div class="header"><div style = "text-align: center"><b><u>Welcome to GreenBox!</u></b></div></div>
-    <div style ="text-align: right">
-        <a href="MyProfile">My Profile </a> </br>
-        <a href="MyRewards">My Rewards </a> </br>
-        <a href="Settings"> Settings </a> <p></p>
-      </div>
 
 
-<!-- This is the html code for the navbar -->
+
+
+
+<!-- This is the html code for the navbar that I hid because it looked to much like a website
   <div class ="navbar">
     <div class ="dropdown">
     <button class ="dropbtn" onclick ="myFunction()">Menu<i class ="fa fa-caret-down"></i></button>
@@ -34,9 +32,10 @@ from the file named in the href statement -->
     <a href ="locategb.html">Locate a GreenBox</a>
     <a href ="contactus.html">Contact Us!</a>
   </div>
+-->
 
 
-<!--This is the Javascript code for the navbar -->
+<!--This is the Javascript code for the navbar
   <script>
   function myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
@@ -51,15 +50,65 @@ from the file named in the href statement -->
     }
   }
   </script>
-
+-->
 
 <!--This is the general body information -->
 <div class= "body">
 <body>
-<h1> Welcome to the Food Sustainability GreenBox Website!</h1>
-<p> Explore and read more about how you can compost while receiving rewards for your contribution to the planet and why it is important!</p>
-<img src="GreenBox.PNG" alt="Greenbox" width="371" height="295">
-<p> Where does your compost go and who is impacted?</p>
+
+<!-- some text above the boxes could o here
+<h1> <div style="text-align: center">
+</h1> </div>
+-->
+
+
+
+<p>
+  <div class="block">
+    <img src="profile.jpg" width="100" height="100" class="center">
+  </br>
+    <a href="Myprofile.html">
+        <div style="text-align: center"> My Profile </div>
+    </a>
+  </div>
+</p>
+<p>
+  <div class="block">
+    <img src="rewards.jpg" width="100" height="100" class="center">
+  </br>
+    <a href="Myrewards.html">
+    <div style="text-align: center">  My Rewards </div>
+    </a>
+  </div>
+</p>
+<p>
+  <div class="block">
+    <img src="GreenBox.PNG" width="100" height="100" class="center">
+  </br>
+    <a href="locategb.html">
+    <div style="text-align: center">  Locate a GreenBox </div>
+    </a>
+  </div>
+</p>
+<p>
+  <div class="block">
+    <img src="settings.jpg" width="100" height="100" class="center">
+  </br>
+    <a href="Settings.html">
+      <div style="text-align: center"> Settings </div>
+    </a>
+  </div>
+</p>
+<p>
+    <div class="block">
+      <img src="contactus.jpg" width="100" height="100" class="center">
+    </br>
+      <a href="contactus.html">
+        <div style="text-align: center"> Contact Us! </div>
+      </a>
+    </div>
+</p>
+
 </body>
 </div>
 
@@ -72,6 +121,7 @@ from the file named in the href statement -->
 
 <!--This is the fixed footer that will be added to all of the pages eventually,
 css is in the mainscreen.css file -->
+<div class="push"></div>
 <div class ="footer">
   <p>What do you think of GreenBox?
   </br>Leave comments and suggestions on the 'Contact Us!' page so we can improve!</p>
